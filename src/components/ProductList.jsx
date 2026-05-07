@@ -21,13 +21,14 @@ const ProductList = ({category, addToCart}) => {
       <h2>Available Products</h2>
 
       {/* TODO: Filter sample data using selected category */}
-    {filteredProducts.length > 0 ? (
+    {filteredProducts.length === 0 ? (
+      <p>No products available</p>
+    ) : (
       filteredProducts.map((product) => (
         <ProductCard key={product.id} product={product} addToCart={addToCart} />
       ))
-    ):(
-      <p> No products available</p>
     )}
+    
       </div>
   )
 }
