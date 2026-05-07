@@ -43,6 +43,7 @@ const handleCategoryChange = (e) => {
         <option value="Fruits">Fruits</option>
         <option value="Dairy">Dairy</option>
         <option value="Bike">Bike</option>
+        <option value="Veggies">Veggies</option>
       </select>
 
       <ProductList 
